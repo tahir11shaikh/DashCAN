@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>deviceDialog</class>
+ <widget class="QDialog" name="deviceDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>390</width>
+    <height>171</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Device Configuration</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* --- Dark Theme for Main Dialog --- */
+QDialog {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Ensure all labels are white and clear */
+QLabel {
+    font-size: 12pt;
+    color: white;
+}
+
+/* Optional: make title label distinct */
+QLabel#labelTitle {
+    font-size: 18pt;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    qproperty-alignment: 'AlignCenter';
+}
+
+/* Optional: if you add a designer label under title */
+QLabel#labelDesigner {
+    font-size: 10pt;
+    color: #bbbbbb;
+    qproperty-alignment: 'AlignCenter';
+}
+
+QLineEdit {
+    background-color: #2e2e2e;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QLineEdit:read-only {
+    background-color: #3a3a3a;
+    color: #ccc;
+}
+
+QPushButton {
+    background-color: #3a3a3a;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 6px 12px;
+    color: white;
+}
+QPushButton:hover:!disabled {
+    background-color: #505050;
+}
+QPushButton:disabled {
+    background-color: #2a2a2a;
+    color: #777;
+}
+
+/* --- Light Theme for QMessageBox --- */
+QMessageBox {
+    background-color: white;
+    color: black;
+}
+QMessageBox QLabel {
+    color: black;
+}
+QMessageBox QPushButton {
+    background-color: #f0f0f0;
+    color: black;
+    border: 1px solid #888;
+    border-radius: 4px;
+    padding: 4px 10px;
+}
+QMessageBox QPushButton:hover {
+    background-color: #e0e0e0;
+}
+</string>
+  </property>
+  <widget class="QLabel" name="labelDeviceName">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>120</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PCAN Device:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxDeviceList">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>200</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelDeviceBitrate">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>120</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Bitrate:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxDeviceBitrateList">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>60</y>
+     <width>200</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonDeviceDetect">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>120</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Auto Detect</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonDeviceConfigure">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>110</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Configure</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonDeviceCancel">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>110</y>
+     <width>90</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
