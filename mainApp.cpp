@@ -622,13 +622,11 @@ void MainWindow::on_pushButtonDbcFileBrowse_clicked()
     // --- Copy the selected DBC file to workspacePath ---
     if (!workspacePath.isEmpty() && QDir(workspacePath).exists()) {
         QString destFile = QDir(workspacePath).filePath(QFileInfo(fileName).fileName());
-        if (QFile::exists(destFile)) {
-            QFile::remove(destFile);
-        }
-        if (QFile::copy(fileName, destFile)) {
-            //TVS: qDebug() << "Copied DBC file to workspace:" << destFile;
-        } else {
-            QMessageBox::warning(this, tr("Error"), tr("Failed to copy DBC file to workspace."));
+
+        // Attempt to copy the file
+        if (!QFile::copy(fileName, destFile)) {
+            // Optionally handle cases where permissions might be the issue
+            // (e.g., if the file is locked by another process)
         }
     }
 
