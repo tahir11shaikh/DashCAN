@@ -1,4 +1,8 @@
-🧰 DashCAN — Open Source CAN Bus Monitoring Tool(DashCAN-Overview video link: https://drive.google.com/file/d/1XMqV9JXD6d6TOGpGYja2csdfHu0FnINa/view?usp=drive_link)
+DashCAN is an open-source Windows application for monitoring, analyzing, and visualizing CAN bus communication(DashCAN-Overview video link: https://drive.google.com/file/d/1XMqV9JXD6d6TOGpGYja2csdfHu0FnINa/view?usp=drive_link)
+
+**Version:** v1.0.0 (Latest)  
+**Status:** Stable Release  
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8bea9ddc-c831-4c13-acce-b8b4e7e3b724" />
 
 DashCAN is an open-source Windows application for monitoring, analyzing, and visualizing CAN bus communication.
